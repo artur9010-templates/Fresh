@@ -1,6 +1,6 @@
-*[id^="pages-"]{
+*[id^="pages-"] > a{
   cursor:pointer;
 }
-*[id^="pages-"]:focus{
+*[id^="pages-"] > a:focus{
   outline:none !important;
 }
