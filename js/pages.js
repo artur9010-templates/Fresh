@@ -5,12 +5,13 @@ function loadPage(page){
 	var i = $("#k"), p = $("#page"), n = p.height();
 	i.load( "pages/" + page + ".html" );
 	var m = i.height();
-	p.animate({opacity:0}, 500,function(){
-		p.html(i.html());
-		p.height(m);
-	})
+	p.animate({opacity:0}, 500)
 	setTimeout(function(){
-		p.animate({height:n, opacity: 1}, 500)
+		p.html(i.html());
+		p.height(n);
+		setTimeout(function(){
+			p.animate({height:m, opacity: 1}, 500)
+		},1)
 	},501)
 //	p.animate({height:m}, 1000)
 	$('*[id^="pages-"]').each(function(){$(this).attr("class", "");})
