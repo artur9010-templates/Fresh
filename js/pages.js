@@ -1,7 +1,7 @@
 $( "#page" ).load( "pages/index.html" );
 
 function loadPage(page){
-	$("#page").load( "pages/" + page + ".html" );
+//	$("#page").load( "pages/" + page + ".html" );
 	var i = $("#k"), p = $("#page"), n = p.height();
 	i.load( "pages/" + page + ".html" );
 	var m = i.height();
