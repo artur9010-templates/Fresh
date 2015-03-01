@@ -1,10 +1,13 @@
 $( "#page" ).load( "pages/index.html" );
 
 function loadPage(page){
-	var i = $("</div>"), p = $("#page");
+	//$("#page").load( "pages/" + page + ".html" );
+	var i = $("</div>"), p = $("#page"), n = p.height();
 	i.load( "pages/" + page + ".html" );
-	var n = p.height(), m = i.height();
-	p.html(i.html());p.height(n);p.animate({height:m})
+	var m = i.height();
+	p.load( "pages/" + page + ".html" );
+	p.height(n);
+	p.animate({height:m})
 	$('*[id^="pages-"]').each(function(){$(this).attr("class", "");})
 	$("#pages-" + page).attr("class", "active");
 }
