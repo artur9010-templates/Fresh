@@ -1,9 +1,7 @@
-var lastPage = "index";
-$( "#body" ).load( "pages/index.html" );
+$( "#page" ).load( "pages/index.html" );
 
 function loadPage(page){
-	$("#body").load( "pages/" + page + ".html" );
-	$("#pages-" + lastPage).attr("class", "");
+	$("#page").load( "pages/" + page + ".html" );
+	$('*[id^="pages-"]').each(function(){$(this).attr("class", "");})
 	$("#pages-" + page).attr("class", "active");
-	lastPage = page;
 }
