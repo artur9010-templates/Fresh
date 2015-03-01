@@ -9,7 +9,9 @@ function loadPage(page){
 	setTimeout(function(){
 		p.html(i.html());
 		p.height(n);
+		console.log(n)
 		setTimeout(function(){
+			console.log(m)
 			p.animate({height:m, opacity: 1}, 500)
 		},1)
 	},501)
