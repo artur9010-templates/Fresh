@@ -1,7 +1,6 @@
 <!--
-Fresh theme by artur9010.pl
-please do not delete footer.
-Thank you for downloading :>
+FRESH 1.5
+http://artur9010.github.io/
 -->
 
 <!DOCTYPE html>
@@ -16,7 +15,11 @@ Thank you for downloading :>
 		<link rel="stylesheet" href="css/bootstrap.cover.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/material.min.css">
+		<!-- Server status configuration -->
+		<script>
+			var serverIP = "mc.hypixel.net";
+			var serverPort = 25565;
+		</script>
 	</head>
 	<body>
 		<div class="site-wrapper">
@@ -42,7 +45,7 @@ Thank you for downloading :>
 					<!-- Head end -->
 
 					<!-- Body -->
-					<div id="k" style="display:none"></div>
+					<div id="k"></div>
 					<div id="page" class="inner cover">
 						<h1 class="cover-heading"><i class="fa fa-cube"></i> Loading...</h1>
 					</div>
@@ -50,6 +53,11 @@ Thank you for downloading :>
 
 					<!-- Footer, only edit "Copyright 2015 MyWebsite.com" -->
 					<div class="mastfoot">
+						<div class="panel panel-default status">
+							<div class="panel-body">
+								<h2 id="serverIP"></h2><p id="serverStatus"></p>
+							</div>
+						</div>
 						<div class="inner">
 							<p>
 								<a href="http://facebook.com/" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a> 
@@ -70,4 +78,6 @@ Thank you for downloading :>
 	</body>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/pages.js"></script>
+	<script src="js/mc-api.js"></script>
+	<script src="js/serverstatus.js"></script>
 </html>

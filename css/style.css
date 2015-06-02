@@ -4,3 +4,12 @@
 *[id^="pages-"] > a:focus{
   outline:none !important;
 }
+
+.status{
+  background: url("../media/serverStatus.png");
+}
+
+#k{
+
+  margin-bottom: 50px;
+}
