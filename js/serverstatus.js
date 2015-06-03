@@ -3,7 +3,7 @@ MinecraftAPI.getServerStatus(serverIP, {
   }, function (err, status) {
     $("#serverIP").html(serverIP);
     if (err) {
-      return document.querySelector('.server-status').innerHTML = "Can't load status";
+      return document.querySelector('.server-status').innerHTML = "<span class=\"label label-danger\">Error :<</span>";
     }
 
     // you can change these to your own message!

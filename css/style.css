@@ -9,7 +9,20 @@
   background: url("../media/serverStatus.png");
 }
 
-#k{
+.status #serverIP{
+  font-size: 30px;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 
-  margin-bottom: 50px;
+#k{
+  margin-bottom: 40px;
+}
+
+.footerLinks > a{
+  color: white;
+}
+
+.footerLinks > a:hover{
+  color: gray;
 }

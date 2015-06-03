@@ -1,3 +1,4 @@
+// Load default page
 $( "#page" ).load( "pages/index.html" );
 
 function loadPage(page){

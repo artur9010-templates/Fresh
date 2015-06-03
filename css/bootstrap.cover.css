@@ -28,7 +28,6 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
   background: url(../media/bg.png);
   background-repeat:no-repeat;
   background-position: center center;
