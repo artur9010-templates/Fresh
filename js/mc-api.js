@@ -9,7 +9,8 @@
         /**
          * @constructor
          */
-        function SyfaroAPI() {}
+        function SyfaroAPI() {
+        }
 
         /**
          * Generates a query string from an object
@@ -89,7 +90,8 @@
         /**
          * @constructor
          */
-        function MinecraftAPI() {}
+        function MinecraftAPI() {
+        }
 
         api = new SyfaroAPI();
 
