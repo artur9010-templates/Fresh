@@ -9,7 +9,8 @@ MinecraftAPI.getServerStatus(serverIP, {
 
     $("#serverIP").html("<input class=\"mc-input\" value='" + serverIP + "' disabled>")
     if (err) {
-        return document.querySelector('.server-status').innerHTML = "<span class=\"label label-danger\">Error :<</span>";
+        $("#serverStatus").html("<span class=\"label label-danger\">Error :<</span>")
+        return;
     }
 
     // you can change these to your own message!
