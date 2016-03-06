@@ -6,7 +6,7 @@
 }
 
 .status{
-  background: url("../media/serverStatus.png");
+  background: url("../media/dirtbackground.png");
 }
 
 .status #serverIP{
@@ -25,4 +25,20 @@
 
 .footerLinks > a:hover{
   color: gray;
+}
+
+.mc-input{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  margin:10px;
+  border:1px solid #c8cdc8;
+  background:#000;
+  color:#fff;
+  width:90%;
+  height:35px;
+}
+.mc-input:focus {
+  color:#fff;
 }
