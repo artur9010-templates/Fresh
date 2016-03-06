@@ -1,44 +1,46 @@
-*[id^="pages-"] > a{
-  cursor:pointer;
-}
-*[id^="pages-"] > a:focus{
-  outline:none !important;
+*[id^="pages-"] > a {
+    cursor: pointer;
 }
 
-.status{
-  background: url("../media/dirtbackground.png");
+*[id^="pages-"] > a:focus {
+    outline: none !important;
 }
 
-.status #serverIP{
-  font-size: 30px;
-  color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+.status {
+    background: url("../media/dirtbackground.png");
 }
 
-#k{
-  margin-bottom: 40px;
+.status #serverIP {
+    font-size: 30px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.footerLinks > a{
-  color: white;
+#k {
+    margin-bottom: 40px;
 }
 
-.footerLinks > a:hover{
-  color: gray;
+.footerLinks > a {
+    color: white;
 }
 
-.mc-input{
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: bold;
-  margin:10px;
-  border:1px solid #c8cdc8;
-  background:#000;
-  color:#fff;
-  width:90%;
-  height:35px;
+.footerLinks > a:hover {
+    color: gray;
 }
+
+.mc-input {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    border: 1px solid #c8cdc8;
+    background: #000;
+    color: #fff;
+    width: 90%;
+    height: 35px;
+}
+
 .mc-input:focus {
-  color:#fff;
+    color: #fff;
 }
