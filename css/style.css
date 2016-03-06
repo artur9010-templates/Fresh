@@ -12,6 +12,7 @@
 
 .status {
     background: url("../media/dirtbackground.png");
+    box-shadow: black 1px 1px 1px;
 }
 
 .status #serverIP {
