@@ -1,6 +1,8 @@
 <!--
-FRESH 1.7
+FRESH 1.7.1
 http://artur9010.pl/
+
+Don't remove this :)
 -->
 
 <!DOCTYPE html>
@@ -21,17 +23,6 @@ http://artur9010.pl/
     <link rel="stylesheet" href="css/bootstrap.cover.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Configuration -->
-    <script>
-        // Server status
-        var serverIP = "mc.hypixel.net";
-        var serverPort = 25565;
-
-        var serverOnline = "Online!";
-        var serverOffline = "Offline :C";
-    </script>
-    <!-- Configuration end -->
 </head>
 <body>
 <div class="site-wrapper">
@@ -71,7 +62,7 @@ http://artur9010.pl/
 
             <!-- Footer, only edit "Copyright 2015 MyWebsite.com" -->
             <div class="mastfoot">
-                <div class="panel panel-default status rounded_corners">
+                <div class="panel panel-default status rounded_corners" id="status">
                     <div class="panel-body">
                         <p id="serverIP"></p>
                         <p id="serverStatus"></p>
@@ -102,6 +93,7 @@ http://artur9010.pl/
 </body>
 <!-- Scriptz -->
 <script src="js/jquery.min.js"></script>
+<script src="config.js"></script>
 <script src="js/pages.js"></script>
 <script src="js/mc-api.js"></script>
 <script src="js/serverstatus.js"></script>
