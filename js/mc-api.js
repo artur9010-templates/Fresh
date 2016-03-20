@@ -45,7 +45,7 @@
         SyfaroAPI.prototype.loadJSON = function (endpoint, params, callback) {
             var xhr, url;
 
-            if (typeof (params) === 'function') {
+            if (typeof (params) === "function") {
                 callback = params;
                 params = {};
             }
@@ -69,7 +69,7 @@
                     return callback(e);
                 }
 
-                if (data.status === 'error') {
+                if (data.status === "error") {
                     return callback(data.error);
                 }
 
@@ -108,11 +108,11 @@
                 options = {};
             }
 
-            options['ip'] = ip;
+            options["ip"] = ip;
 
-            api.loadJSON('/server/status', options, callback);
+            api.loadJSON("/server/status", options, callback);
         };
-        MinecraftAPI.prototype['getServerStatus'] = MinecraftAPI.prototype.getServerStatus;
+        MinecraftAPI.prototype["getServerStatus"] = MinecraftAPI.prototype.getServerStatus;
 
         return MinecraftAPI;
     }());
