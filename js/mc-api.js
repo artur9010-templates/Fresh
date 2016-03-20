@@ -1,5 +1,5 @@
 (function () {
-    'use strict';
+    "use strict";
 
     var SyfaroAPI, MinecraftAPI, baseURL;
 
@@ -28,11 +28,11 @@
                 }
 
                 if (params.hasOwnProperty(p)) {
-                    str.push(encodeURIComponent(p) + '=' + encodeURIComponent(params[p]));
+                    str.push(encodeURIComponent(p) + "=" + encodeURIComponent(params[p]));
                 }
             }
 
-            return '?' + str.join('&');
+            return "?" + str.join("&");
         };
 
         /**
@@ -76,7 +76,7 @@
                 callback(undefined, data);
             };
 
-            xhr.open('GET', url, true);
+            xhr.open("GET", url, true);
 
             xhr.send();
         };
@@ -103,7 +103,7 @@
          * @return {undefined}            does not return
          */
         MinecraftAPI.prototype.getServerStatus = function (ip, options, callback) {
-            if (typeof (options) === 'function') {
+            if (typeof (options) === "function") {
                 callback = options;
                 options = {};
             }
@@ -117,5 +117,5 @@
         return MinecraftAPI;
     }());
 
-    window['MinecraftAPI'] = new MinecraftAPI();
+    window["MinecraftAPI"] = new MinecraftAPI();
 }());
